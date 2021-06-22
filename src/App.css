@@ -39,7 +39,7 @@
 
 
 input[type=text],
-    input[type=password] {
+    input[type=password],input[type=phone] {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -48,7 +48,7 @@ input[type=text],
         box-sizing: border-box;
     }
     /* set a style for all buttons*/
-    button {
+    .button {
         background-color: green;
         color: white;
         padding: 14px 20px;

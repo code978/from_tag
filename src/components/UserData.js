@@ -18,7 +18,7 @@ const UserData = () => {
             <form onSubmit={e => { handleSubmit(e) }}>
             <h1> please enter user data</h1>
             <h1>{choreDesc}  {name} {date}</h1>
-                <label>Chore description:</label>
+                <label>Name :</label>
                 <br />
                 <input
                     name='choreDesc'
@@ -27,7 +27,7 @@ const UserData = () => {
                     onChange={e => setChoreDesc(e.target.value)}
                 />
                 <br />
-                <label>Name:</label>
+                <label>email:</label>
                 <br />
                 <input
                     name='name'
@@ -36,18 +36,18 @@ const UserData = () => {
                     onChange={e => setName(e.target.value)}
                 />
                 <br />
-                <label>Date:</label>
+                <label>phone:</label>
                 <br />
                 <input
                     name='date'
-                    type='date'
+                    type='phone'
                     value={date}
                     onChange={e => setDate(e.target.value)}
                 />
                 <br />
-                <input
+                <input className=".button"
                     type='submit'
-                    value='Add Log'
+                    value='Add Data'
                 />
             </form>
             )
